@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n Kbot
+web: bin/hubot --adapter slack -n kbot
