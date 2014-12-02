@@ -1,1 +1,1 @@
-web: bin/hubot --adapter slack -n kbot
+web: bin/hubot --adapter slack -n nana
