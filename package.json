@@ -19,6 +19,7 @@
     "hubot-shipit": "^0.1.1",
     "hubot-slack": "^2.2.0",
     "hubot-team": "^1.0.10",
+    "hubot-trello": "^0.1.1",
     "hubot-youtube": "^0.1.2"
   },
   "engines": {
