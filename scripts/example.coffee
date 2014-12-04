@@ -20,6 +20,10 @@ module.exports = (robot) ->
   #   else
   #     msg.reply "Opening #{doorType} doors"
   #
+  robot.respond /(.*) (bomba|pan)/i, (msg) ->
+    msg.reply 'trátame con amor'
+
+  #
   # robot.hear /I like pie/i, (msg) ->
   #   msg.emote "makes a freshly baked pie"
   #
