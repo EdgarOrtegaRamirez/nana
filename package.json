@@ -21,7 +21,8 @@
     "hubot-trello": "^0.1.1",
     "hubot-youtube": "^0.1.2",
     "hubot-thank-you": "0.0.3",
-    "hubot-nintendo": "git://github.com/charly-palencia/hubot-nintendo.git"
+    "hubot-nintendo": "git://github.com/charly-palencia/hubot-nintendo.git",
+    "hubot-has-no-idea": "git://github.com/okize/hubot-has-no-idea.git"
   },
   "engines": {
     "node": "0.10.x"
