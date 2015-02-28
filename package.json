@@ -3,25 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "author": "y",
-  "description": "Test bot",
+  "description": "Bot",
   "dependencies": {
+    "figlet": "^1.1.0",
     "hubot": "^2.9.3",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.1",
     "hubot-google-translate": "^0.1.0",
+    "hubot-has-no-idea": "git://github.com/okize/hubot-has-no-idea.git",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-maps": "0.0.0",
+    "hubot-nintendo": "^1.0.6",
     "hubot-redis-brain": "0.0.2",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.1",
     "hubot-slack": "^2.2.0",
     "hubot-team": "git://github.com/charly-palencia/hubot-team.git",
-    "hubot-youtube": "^0.1.2",
     "hubot-thank-you": "0.0.3",
-    "hubot-has-no-idea": "git://github.com/okize/hubot-has-no-idea.git",
-    "hubot-nintendo": "^1.0.6"
+    "hubot-youtube": "^0.1.2"
   },
   "engines": {
     "node": "0.10.x"

@@ -8,7 +8,25 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
+figlet = require 'figlet'
+
 module.exports = (robot) ->
+
+  robot.respond /(.*) (bomba|pan)/i, (msg) ->
+    msg.reply 'trátame con amor'
+
+  robot.respond /figlet (.*)/i, (msg) ->
+    response = figlet msg.match[1], {
+      font: 'Standard',
+      horizontalLayout: 'fitted'
+    },
+    (err, text)->
+      robot.logger.error "something went wrong: `#{err}`" if err
+      msg.send """
+        ```
+        #{text}
+        ```
+        """
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
@@ -20,9 +38,6 @@ module.exports = (robot) ->
   #   else
   #     msg.reply "Opening #{doorType} doors"
   #
-  robot.respond /(.*) (bomba|pan)/i, (msg) ->
-    msg.reply 'trátame con amor'
-
   #
   # robot.hear /I like pie/i, (msg) ->
   #   msg.emote "makes a freshly baked pie"
